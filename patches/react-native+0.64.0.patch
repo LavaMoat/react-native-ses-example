@@ -1,0 +1,12 @@
+diff --git a/node_modules/react-native/Libraries/Core/InitializeCore.js b/node_modules/react-native/Libraries/Core/InitializeCore.js
+index e00120a..da5e85f 100644
+--- a/node_modules/react-native/Libraries/Core/InitializeCore.js
++++ b/node_modules/react-native/Libraries/Core/InitializeCore.js
+@@ -32,7 +32,6 @@ require('./setUpGlobals');
+ require('./setUpPerformance');
+ require('./setUpSystrace');
+ require('./setUpErrorHandling');
+-require('./polyfillPromise');
+ require('./setUpRegeneratorRuntime');
+ require('./setUpTimers');
+ require('./setUpXHR');

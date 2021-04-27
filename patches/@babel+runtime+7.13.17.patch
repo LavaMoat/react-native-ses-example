@@ -1,0 +1,43 @@
+diff --git a/node_modules/@babel/runtime/helpers/get.js b/node_modules/@babel/runtime/helpers/get.js
+index 3ed600f..2693bf4 100644
+--- a/node_modules/@babel/runtime/helpers/get.js
++++ b/node_modules/@babel/runtime/helpers/get.js
+@@ -3,7 +3,6 @@ var superPropBase = require("./superPropBase.js");
+ function _get(target, property, receiver) {
+   if (typeof Reflect !== "undefined" && Reflect.get) {
+     module.exports = _get = Reflect.get;
+-    module.exports["default"] = module.exports, module.exports.__esModule = true;
+   } else {
+     module.exports = _get = function _get(target, property, receiver) {
+       var base = superPropBase(target, property);
+@@ -16,12 +15,9 @@ function _get(target, property, receiver) {
+ 
+       return desc.value;
+     };
+-
+-    module.exports["default"] = module.exports, module.exports.__esModule = true;
+   }
+ 
+   return _get(target, property, receiver || target);
+ }
+ 
+ module.exports = _get;
+\ No newline at end of file
+-module.exports["default"] = module.exports, module.exports.__esModule = true;
+\ No newline at end of file
+diff --git a/node_modules/@babel/runtime/helpers/getPrototypeOf.js b/node_modules/@babel/runtime/helpers/getPrototypeOf.js
+index a6916eb..5fc9a16 100644
+--- a/node_modules/@babel/runtime/helpers/getPrototypeOf.js
++++ b/node_modules/@babel/runtime/helpers/getPrototypeOf.js
+@@ -2,9 +2,7 @@ function _getPrototypeOf(o) {
+   module.exports = _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+     return o.__proto__ || Object.getPrototypeOf(o);
+   };
+-  module.exports["default"] = module.exports, module.exports.__esModule = true;
+   return _getPrototypeOf(o);
+ }
+ 
+ module.exports = _getPrototypeOf;
+\ No newline at end of file
+-module.exports["default"] = module.exports, module.exports.__esModule = true;
+\ No newline at end of file
