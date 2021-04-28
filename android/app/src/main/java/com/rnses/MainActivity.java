@@ -2,7 +2,7 @@ package com.rnses;
 
 import com.facebook.react.ReactActivity;
 
-public class MainActivity extends ReactActivity {
+public class MainActivity extends ReactNativeSESExampleActivity {
 
   /**
    * Returns the name of the main component registered from JavaScript. This is used to schedule
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "rnSES";
+    return "ReactNativeSESExample";
   }
 }
